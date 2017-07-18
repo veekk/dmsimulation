@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.veek.dmserver.Main">
+   <children>
+      <VBox fx:id="container" layoutX="14.0" layoutY="14.0" prefHeight="168.0" prefWidth="420.0" />
+      <Button fx:id="start" layoutX="494.0" layoutY="14.0" mnemonicParsing="false" onAction="#start" prefHeight="27.0" prefWidth="92.0" text="Start" />
+      <Button fx:id="stop" layoutX="493.0" layoutY="48.0" mnemonicParsing="false" onAction="#stop" prefHeight="27.0" prefWidth="92.0" text="Stop" />
+      <Button fx:id="reset" layoutX="493.0" layoutY="83.0" mnemonicParsing="false" onAction="#reset" prefHeight="27.0" prefWidth="92.0" text="Reset" />
+      <TextArea fx:id="console" layoutX="13.0" layoutY="187.0" prefHeight="200.0" prefWidth="575.0" />
+      <CheckBox id="random" fx:id="randomCb" layoutX="490.0" layoutY="132.0" mnemonicParsing="false" text="Random all" />
+      <CheckBox fx:id="enableCb" layoutX="490.0" layoutY="160.0" mnemonicParsing="false" text="Enable all" />
+      <Slider layoutX="457.0" layoutY="13.0" orientation="VERTICAL" fx:id="freq" />
+      <Label layoutX="448.0" layoutY="160.0" text="" fx:id="freqL" />
+   </children>
+</Pane>
